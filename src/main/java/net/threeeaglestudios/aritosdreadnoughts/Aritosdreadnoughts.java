@@ -27,6 +27,9 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+import net.threeeaglestudios.aritosdreadnoughts.block.ModBlocks;
+import net.threeeaglestudios.aritosdreadnoughts.creativetab.ModCreativeModTabs;
+import net.threeeaglestudios.aritosdreadnoughts.item.ModItems;
 import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
@@ -41,11 +44,11 @@ public class Aritosdreadnoughts {
 
         modEventBus.addListener(this::commonSetup);
 
-        //ModCreativeModTabs.register(modEventBus);
+        ModCreativeModTabs.register(modEventBus);
 
-        //ModItems.register(modEventBus);
+        ModItems.register(modEventBus);
 
-        //ModBlocks.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         //ModBlockEntities.register(modEventBus);
 
